@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the addEventListener() method to add many events on the document.</p>
+
+<p id="demo"></p>
+
+<script>
+document.addEventListener("mouseover", myFunction);
+document.addEventListener("dblclick", mySecondFunction);
+document.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+    document.getElementById("demo").style.background ="yellow"
+}
+
+function mySecondFunction() {
+    document.getElementById("demo").innerHTML += "Clicked!<br>"
+}
+
+function myThirdFunction() {
+    document.getElementById("demo").style.background="red"
+}
+</script>
+
+</body>
+</html>
